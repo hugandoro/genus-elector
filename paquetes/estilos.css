@@ -1,0 +1,235 @@
+/*empezamos por esto, para evitar resultados extraños en distintos navegadores, y algo de estilo al texto*/
+
+body {
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    font-size:12px;
+
+    color:#666666;
+
+    text-align:center; /*aqui mandamos a centrar todo el contenido*/ 
+
+}
+
+#contenedor {
+
+    width:800px; /*ancho total de la pagina*/ 
+
+    border:1px solid #333333; /*encadeno los 3 atributos claves del borde en una sola linea, ahorrando codigo XD*/ 
+
+    background-color:rgb(255, 255, 255);
+
+    margin:10px auto; /*10px arriba y abajo, y auto a los lados, para los navegadores nuevos es suficiente para centrar la pagina*/ 
+
+    text-align:left; /*aqui alineamos todo de nuevo a la izquierda, pero dentro del contenedor*/ 
+
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+
+}
+
+#encabezado {
+
+    margin:10px; /*para que no se pegue al borde*/ 
+
+    padding:10px; /*algo de relleno*/
+
+    width:550px; /*este ancho es para que cuadre con el texto*/ 
+
+    height:100px; /*idem*/ 
+
+    border:0px solid #333333; /*decoracion*/ 
+
+    background-color:rgb(43, 36, 109); /*more*/ 
+
+    float:left; /*lo flotamos a la izquierda*/ 
+
+    display:inline; /*(*)*/ 
+
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+
+}
+
+#encabezado h1 { /*encadenamos el identificador del div, con la etiqueta par areferirnos solo al h1 dentro del div encabezado, asi no afectara otros h1 en el resto del documento.*/ 
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    width:424px;
+
+    color:#FFFFFF;
+
+    margin:0; /*los h1 vienen con margen, con esto se lo quito*/ 
+
+    text-transform:uppercase; /*convierte todas en mayusculas*/ 
+
+    padding-bottom:10px;
+
+}
+
+#encabezado h2 { /*encadenamos el identificador del div, con la etiqueta par areferirnos solo al h1 dentro del div encabezado, asi no afectara otros h1 en el resto del documento.*/ 
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    width:424px;
+
+    color:#FFFFFF;
+
+    margin:0; /*los h1 vienen con margen, con esto se lo quito*/ 
+
+    text-transform:uppercase; /*convierte todas en mayusculas*/ 
+
+    padding-bottom:10px;
+
+}
+
+#menu {
+
+    float:right;
+
+    margin:10px 10px auto 0;
+
+    border:0px solid #333333;
+
+    width:180px;
+
+    height:150px;
+
+} 
+
+ul {
+
+    list-style-type:none; /*con esto quitamos las viñetas*/
+
+    margin:0; /*le quitamos el margen a la lista*/ 
+
+    padding:0; /*y el relleno*/
+
+}
+
+li {
+
+    margin:0; /*le quito el margen al elemento de la lista*/ 
+
+    /* float:right; /*y los floto a la izquierda para eliminar el salto de linea*/ 
+
+}
+
+li a {
+
+    display:block; /*con esto el vinculo tendra un area rectangular, asi no sera solo el texto*/ 
+
+    background-color:rgb(0, 0, 0); /*algo de color*/ 
+
+    color:#FFFFFF; /*mas*/ 
+
+    width:180 px; /*defino el ancho del rectangulo del vinculo*/
+
+    padding:20px 20px 15px 15px; /*sumamos el relleno al ancho y alto del rectangulo para obtener el div #menu completamente ocupado con los ítems del menú*/ 
+
+    text-decoration:none; /*elimino el subrayado del vínculo*/ 
+
+    font-weight:bold; /*decoración*/ 
+
+    /* text-transform:uppercase; /*decorare los vinculos en mayusculas*/
+
+}
+
+li a:hover {
+
+	background-color:rgb(43, 36, 109); /*decoración para el evento hover (mouse encima)*/
+
+	font-family: Verdana, Geneva, sans-serif;
+
+}
+
+#contenido {
+
+    width:780px; /*el ancho mas el padding me da 600px de ancho que es loque mide la pagina */
+
+    clear:both; /*con esto nos aseguramos de que no se ponga nada a los lados*/ 
+
+    padding:10px;
+
+} 
+
+#contenido h2 {
+
+	font-size:16px;
+
+	color:#000000;
+
+	width:auto;
+
+	text-transform:uppercase;
+
+	border-bottom:1px dotted #000000;
+
+}
+
+#contenido h3 {
+
+    width:246px;
+
+    font-size:14px;
+
+    color:rgb(43, 36, 109);;
+
+    border-bottom:1px dotted rgb(43, 36, 109);;
+
+}
+
+#footer {
+
+	width:750px;
+
+	padding:10px;
+
+	font-size:80%; /*mas pequeño el texto*/
+
+	font-style:italic;
+
+	color:#999999;
+
+	text-align: right;
+
+}
+
+input {
+
+	font-family: Verdana, Geneva, sans-serif;
+
+	font-size: 18px;
+
+}
+
+.TextoBase {
+
+	font-family: Verdana, Geneva, sans-serif;
+
+	font-size: 16px;
+
+	color: #333;
+
+}
+
+.NUMERO {
+
+	font-family: Verdana, Geneva, sans-serif;
+
+	font-size: 36px;
+
+	color: #333;
+
+	font-weight: bold;
+
+}
+
